@@ -7,9 +7,9 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-xl md:text-2xl tracking-widest text-primary-foreground">
+        <a href="#" className="font-display text-xl md:text-2xl tracking-widest text-foreground">
           DL Esmalteria
         </a>
 
@@ -19,7 +19,7 @@ const Header = () => {
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="text-primary-foreground/70 hover:text-primary-foreground text-xs tracking-[0.2em] uppercase font-body transition-colors"
+              className="text-foreground/70 hover:text-foreground text-xs tracking-[0.2em] uppercase font-body transition-colors"
             >
               {link}
             </a>
@@ -35,7 +35,7 @@ const Header = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-primary-foreground"
+          className="md:hidden text-foreground"
           aria-label="Toggle menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -44,13 +44,13 @@ const Header = () => {
 
       {/* Mobile nav */}
       {open && (
-        <nav className="md:hidden bg-primary border-t border-primary-foreground/10 pb-6">
+        <nav className="md:hidden bg-background border-t border-border pb-6">
           {navLinks.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
               onClick={() => setOpen(false)}
-              className="block px-6 py-3 text-primary-foreground/70 hover:text-primary-foreground text-sm tracking-[0.15em] uppercase font-body"
+              className="block px-6 py-3 text-foreground/70 hover:text-foreground text-sm tracking-[0.15em] uppercase font-body"
             >
               {link}
             </a>

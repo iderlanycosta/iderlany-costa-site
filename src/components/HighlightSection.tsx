@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import highlightImg from "@/assets/nails-luxury-highlight.jpg";
 
 const HighlightSection = () => (
-  <section className="relative bg-primary text-primary-foreground py-24 md:py-32 overflow-hidden">
+  <section className="relative bg-background text-foreground py-24 md:py-32 overflow-hidden">
     <div className="container grid md:grid-cols-2 gap-12 items-center">
       <motion.div
         initial={{ opacity: 0, x: -40 }}
@@ -16,7 +16,7 @@ const HighlightSection = () => (
           <span className="italic">DESIGNS</span>{" "}
           DE ASSINATURA
         </h2>
-        <p className="font-body text-sm text-primary-foreground/60 leading-relaxed max-w-md">
+        <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-md">
           Cada design é uma expressão de elegância e sofisticação. Nossos artistas criam peças únicas 
           que transformam suas unhas em verdadeiras joias.
         </p>
