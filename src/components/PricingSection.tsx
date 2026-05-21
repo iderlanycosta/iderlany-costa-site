@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
 const prices = [
-  { service: "Manicure Simples", price: "R$ 80" },
-  { service: "Manicure em Gel", price: "R$ 150" },
-  { service: "Pedicure Completa", price: "R$ 120" },
-  { service: "Arte em Unhas", price: "A partir de R$ 50" },
-  { service: "Alongamento em Gel", price: "R$ 250" },
-  { service: "Spa de Mãos", price: "R$ 180" },
-  { service: "Esmaltação em Gel", price: "R$ 100" },
-  { service: "Remoção de Gel", price: "R$ 40" },
+  { service: "Alogamento em Gel", price: "apartir de R$ 150" },
+  { service: "Banho de Gel", price: "R$ 120" },
+  { service: "Esmaltação em Gel", price: "R$ 60" },
+  { service: "Remoção de Alogamento", price: "R$ 40" },
+  { service: "Blindagem", price: "R$ 70" },
+  { service: "Spa de Pés", price: "R$ 110" },
+  { service: "Manicure e Pedicure", price: "R$ 90" },
+  ,
 ];
 
 const PricingSection = () => (
@@ -35,9 +35,8 @@ const PricingSection = () => (
         {prices.map((item, i) => (
           <div
             key={item.service}
-            className={`flex items-center justify-between px-6 md:px-10 py-5 font-body text-sm ${
-              i % 2 === 0 ? "bg-background" : "bg-secondary"
-            } ${i < prices.length - 1 ? "border-b border-border" : ""}`}
+            className={`flex items-center justify-between px-6 md:px-10 py-5 font-body text-sm ${i % 2 === 0 ? "bg-background" : "bg-secondary"
+              } ${i < prices.length - 1 ? "border-b border-border" : ""}`}
           >
             <span className="tracking-wider text-foreground">{item.service}</span>
             <span className="tracking-wider text-rose-tea font-medium">{item.price}</span>

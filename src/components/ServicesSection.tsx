@@ -1,21 +1,26 @@
 import { motion } from "framer-motion";
-import { Gem, Palette, Heart } from "lucide-react";
+import { Gem, Palette, Heart, Pyramid } from "lucide-react";
 
 const services = [
   {
-    icon: Gem,
-    title: "MANICURE DE LUXO",
+    icon: Heart,
+    title: "ALOGAMENTO EM GEL",
     description: "Tratamento premium com produtos de alta qualidade para unhas impecáveis e duradouras.",
   },
   {
-    icon: Palette,
-    title: "ARTE DE UNHAS PERSONALIZADA",
+    icon: Heart,
+    title: "BANHO DE GEL",
     description: "Designs exclusivos criados especialmente para expressar sua personalidade única.",
   },
   {
     icon: Heart,
-    title: "TRATAMENTOS DE CUIDADO",
-    description: "Hidratação profunda, fortalecimento e spa para mãos que merecem atenção especial.",
+    title: "ESMALTAÇÃO EM GEL",
+    description: "Designs exclusivos criados especialmente para expressar sua personalidade única.",
+  },
+  {
+    icon: Heart,
+    title: "SPA DOS PÉS",
+    description: "Hidratação profunda, fortalecimento e spa para pés que merecem atenção especial.",
   },
 ];
 

@@ -1,42 +1,14 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
-import img1 from "@/assets/nails-purple.jpg";
-import img2 from "@/assets/nails-red.jpg";
-import img3 from "@/assets/nails-red-floral.jpg";
-import img4 from "@/assets/nails-white.jpg";
-import img5 from "@/assets/nails-purple-2.jpg";
-import img6 from "@/assets/nails-white-2.jpg";
-
-const images = [img1, img2, img3, img4, img5, img6];
+import { motion } from "framer-motion";
+import AnimatedBackground from "./AnimatedBackground";
 
 const HeroSection = () => {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image slideshow */}
-      <AnimatePresence mode="wait">
-        <motion.img
-          key={current}
-          src={images[current]}
-          alt="Nail art showcase"
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </AnimatePresence>
+      {/* Background animated image sequence */}
+      <AnimatedBackground />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-foreground/50" />
+      <div className="absolute inset-0 bg-foreground/60" />
 
       {/* Content */}
       <motion.div
@@ -51,7 +23,7 @@ const HeroSection = () => {
           EXCLUSIVA
         </h1>
         <p className="mt-6 font-body text-background/80 text-sm md:text-base tracking-wide max-w-md mx-auto">
-          Sofisticação e cuidado em cada detalhe. Transforme suas unhas em obras de arte.
+          Beleza e cuidado no conforto da sua casa. Agende seu atendimento domiciliar e aproveite uma experiência personalizada.
         </p>
         <a
           href="#services"
@@ -60,18 +32,6 @@ const HeroSection = () => {
           Explore Nossos Serviços
         </a>
       </motion.div>
-
-      {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-2 h-2 rounded-full transition-all ${i === current ? "bg-background w-6" : "bg-background/50"}`}
-            aria-label={`Slide ${i + 1}`}
-          />
-        ))}
-      </div>
     </section>
   );
 };

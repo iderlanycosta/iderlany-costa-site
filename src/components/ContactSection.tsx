@@ -46,7 +46,7 @@ const ContactSection = () => {
               <Phone className="text-rose-tea mt-1 shrink-0" size={20} strokeWidth={1.5} />
               <div>
                 <p className="font-body text-sm font-medium text-foreground tracking-wide">Telefone</p>
-                <p className="font-body text-sm text-muted-foreground mt-1">(11) 99999-0000</p>
+                <p className="font-body text-sm text-muted-foreground mt-1">(98) 98409-7983</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

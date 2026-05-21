@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import highlightImg from "@/assets/nails-luxury-highlight.jpg";
+import highlightImg from "@/GALERIA/nails-red.jpeg";
 
 const HighlightSection = () => (
   <section className="relative bg-background text-foreground py-24 md:py-32 overflow-hidden">
@@ -13,15 +13,15 @@ const HighlightSection = () => (
         <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-4">Exclusivo</p>
         <h2 className="font-display text-3xl md:text-5xl tracking-wide leading-tight mb-6">
           DESCUBRA NOSSOS{" "}
-          <span className="italic">DESIGNS</span>{" "}
-          DE ASSINATURA
+          <span className="italic">DESIGNS</span>
+
         </h2>
         <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-md">
-          Cada design é uma expressão de elegância e sofisticação. Nossos artistas criam peças únicas 
+          Cada design é uma expressão de elegância e sofisticação. Nossos artistas criam peças únicas
           que transformam suas unhas em verdadeiras joias.
         </p>
         <a
-          href="#contact"
+          href="https://wa.me/5598984097983"
           className="inline-block mt-8 px-8 py-3.5 bg-rose-tea text-primary text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-rose-blush transition-colors"
         >
           Agendar Agora
