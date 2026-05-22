@@ -22,7 +22,7 @@ const HeroSection = () => {
           <span className="italic text-secondary">ARTE DE UNHAS</span>{" "}
           EXCLUSIVA
         </h1>
-        <p className="mt-6 font-body text-background/80 text-sm md:text-base tracking-wide max-w-md mx-auto">
+        <p className="mt-6 font-body text-background/80 text-base md:text-base tracking-wide max-w-md mx-auto">
           Unhas impecáveis sem precisar sair de casa. Atendimento domiciliar com conforto, higiene e dedicação em cada detalhe.
         </p>
         <a

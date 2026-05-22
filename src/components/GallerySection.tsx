@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import nailsPurple from "@/GALERIA/nails-purple.jpeg";
-import nailsPurple2 from "@/GALERIA/nails-purple-2.jpeg";
-import nailsRed from "@/GALERIA/nails-luxury-highlight.jpeg";
-import nailsRedFloral from "@/GALERIA/nails-red-floral.jpeg";
-import nailsWhite from "@/GALERIA/nails-white.jpeg";
-import nailsWhite2 from "@/GALERIA/nails-white-2.jpeg";
+import nailsPurple from "@/GALERIA/nails-purple.avif";
+import nailsPurple2 from "@/GALERIA/nails-purple-2.avif";
+import nailsRed from "@/GALERIA/nails-luxury-highlight.avif";
+import nailsRedFloral from "@/GALERIA/nails-red-floral.avif";
+import nailsWhite from "@/GALERIA/nails-white.avif";
+import nailsWhite2 from "@/GALERIA/nails-white-2.avif";
 
 const images = [
   { src: nailsPurple, alt: "Unhas roxas metálicas com arte floral" },

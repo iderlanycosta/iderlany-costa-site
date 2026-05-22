@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const prices = [
-  { service: "Alogamento Natural", price: "R$ 150" },
+  { service: "Alogamento Natural", price: "R$ 130" },
   { service: "Alogamento C/Nail Art", price: "R$ 170" },
   { service: "Banho de Gel Natural", price: "R$ 110" },
   { service: "Banho de Gel C/Nail Art", price: "R$ 140" },
-  { service: "Blindagem C/Esmaltação Gel", price: "R$ 70" },
-  { service: "Blindagem Natural", price: "R$ 110" },
+  { service: "Blindagem C/Esmaltação Gel", price: "R$ 80" },
+  { service: "Blindagem Natural", price: "R$ 70" },
   { service: "Manicure e Pedicure", price: "R$ 90" },
   { service: "Spa dos Pés", price: "R$ 120" },
 ];
@@ -21,7 +21,7 @@ const PricingSection = () => (
         transition={{ duration: 0.7 }}
         className="text-center mb-16"
       >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-3">Investimento</p>
+        <p className="font-body text-sm tracking-[0.3em] uppercase text-rose-tea mb-3">Investimento</p>
         <h2 className="font-display text-3xl md:text-4xl tracking-wide text-foreground">Tabela de Preços</h2>
       </motion.div>
 

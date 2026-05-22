@@ -4,7 +4,7 @@ import { Gem, Palette, Heart, Pyramid } from "lucide-react";
 const services = [
   {
     icon: Heart,
-    title: "ALOGAMENTO EM GEL",
+    title: "ALONGAMENTO EM GEL",
     description: "Tratamento premium com produtos de alta qualidade para unhas impecáveis e duradouras.",
   },
   {
@@ -34,7 +34,7 @@ const ServicesSection = () => (
         transition={{ duration: 0.7 }}
         className="text-center mb-16"
       >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-3">O que oferecemos</p>
+        <p className="font-body text-base tracking-[0.3em] uppercase text-rose-tea mb-3">O que oferecemos</p>
         <h2 className="font-display text-3xl md:text-4xl tracking-wide text-foreground">Nossos Serviços</h2>
       </motion.div>
 
@@ -50,7 +50,7 @@ const ServicesSection = () => (
           >
             <s.icon className="mx-auto mb-6 text-secondary-foreground" size={32} strokeWidth={1.2} />
             <h3 className="font-display text-lg tracking-wider mb-4 text-secondary-foreground font-semibold">{s.title}</h3>
-            <p className="font-body text-sm text-secondary-foreground/90 leading-relaxed">{s.description}</p>
+            <p className="font-body text-base text-secondary-foreground/90 leading-relaxed">{s.description}</p>
           </motion.div>
         ))}
       </div>

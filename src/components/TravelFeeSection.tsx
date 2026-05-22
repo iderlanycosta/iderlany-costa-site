@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Info } from "lucide-react";
 
 const travelFees = [
-  { region: "Parque Vitoria e Adjacencias.", fee: "R$ 10" },
-  { region: "Turu, Santa Rosa, Diveia e Vila Luizão.", fee: "R$ 20" },
+  { region: "Parque Vitoria e Adjacências", fee: "R$ 10" },
+  { region: "Turu, Santa Rosa, Divineia e Vila Luizão.", fee: "R$ 20" },
   { region: "Araçagy e Paço do Lumiar.", fee: "R$ 25" },
   { region: "Cohama e Vinhas", fee: "R$ 25" },
-  { region: "Renasceça e Ponta do Farol", fee: "R$ 30" },
+  { region: "Renascença e Ponta do Farol", fee: "R$ 30" },
   { region: "São Francisco e Centro", fee: "R$ 30" },
 ];
 
