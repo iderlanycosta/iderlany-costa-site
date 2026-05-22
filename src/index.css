@@ -18,8 +18,8 @@
     --primary: 0 0% 0%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 340 100% 97%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 35 87% 62%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 340 30% 96%;
     --muted-foreground: 0 0% 40%;
@@ -65,7 +65,12 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
   }
 }
@@ -74,6 +79,7 @@
   .font-display {
     font-family: var(--font-display);
   }
+
   .font-body {
     font-family: var(--font-body);
   }

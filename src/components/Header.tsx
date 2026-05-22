@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-lg md:text-2xl tracking-widest text-foreground">
-          ESMALTERIA IDERLANY COSTA
+        <a href="#" className="font-display text-2x1 md:text-2xl tracking-widest text-foreground">
+          Iderlany Costa | NAILS DESIGNER
         </a>
 
         {/* Desktop nav */}

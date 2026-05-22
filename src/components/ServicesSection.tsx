@@ -46,11 +46,11 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="bg-secondary p-10 text-center group hover:shadow-lg transition-shadow"
+            className="bg-secondary p-10 text-center group hover:shadow-lg transition-shadow text-secondary-foreground"
           >
-            <s.icon className="mx-auto mb-6 text-rose-tea" size={32} strokeWidth={1.2} />
-            <h3 className="font-display text-lg tracking-wider mb-4 text-foreground">{s.title}</h3>
-            <p className="font-body text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+            <s.icon className="mx-auto mb-6 text-secondary-foreground" size={32} strokeWidth={1.2} />
+            <h3 className="font-display text-lg tracking-wider mb-4 text-secondary-foreground font-semibold">{s.title}</h3>
+            <p className="font-body text-sm text-secondary-foreground/90 leading-relaxed">{s.description}</p>
           </motion.div>
         ))}
       </div>

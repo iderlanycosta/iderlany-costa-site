@@ -13,7 +13,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-secondary">
+    <section id="contact" className="py-24 md:py-32 bg-secondary text-secondary-foreground">
       <div className="container max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -22,10 +22,10 @@ const ContactSection = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-3">Fale conosco</p>
-          <h2 className="font-display text-3xl md:text-4xl tracking-wide text-foreground">Contato</h2>
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-secondary-foreground/80 mb-3">Fale conosco</p>
+          <h2 className="font-display text-3xl md:text-4xl tracking-wide text-secondary-foreground font-semibold">Contato</h2>
         </motion.div>
-
+ 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Info */}
           <motion.div
@@ -36,31 +36,31 @@ const ContactSection = () => {
             className="space-y-8"
           >
             <div className="flex items-start gap-4">
-              <MapPin className="text-rose-tea mt-1 shrink-0" size={20} strokeWidth={1.5} />
+              <MapPin className="text-secondary-foreground mt-1 shrink-0" size={20} strokeWidth={1.5} />
               <div>
-                <p className="font-body text-sm font-medium text-foreground tracking-wide">Endereço</p>
-                <p className="font-body text-sm text-muted-foreground mt-1">Rua das Flores, 123 — Centro, São Paulo</p>
+                <p className="font-body text-sm font-medium text-secondary-foreground tracking-wide">Endereço</p>
+                <p className="font-body text-sm text-secondary-foreground/80 mt-1">Rua das Flores, 123 — Centro, São Paulo</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Phone className="text-rose-tea mt-1 shrink-0" size={20} strokeWidth={1.5} />
+              <Phone className="text-secondary-foreground mt-1 shrink-0" size={20} strokeWidth={1.5} />
               <div>
-                <p className="font-body text-sm font-medium text-foreground tracking-wide">Telefone</p>
-                <p className="font-body text-sm text-muted-foreground mt-1">(98) 98409-7983</p>
+                <p className="font-body text-sm font-medium text-secondary-foreground tracking-wide">Telefone</p>
+                <p className="font-body text-sm text-secondary-foreground/80 mt-1">(98) 98409-7983</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Mail className="text-rose-tea mt-1 shrink-0" size={20} strokeWidth={1.5} />
+              <Mail className="text-secondary-foreground mt-1 shrink-0" size={20} strokeWidth={1.5} />
               <div>
-                <p className="font-body text-sm font-medium text-foreground tracking-wide">E-mail</p>
-                <p className="font-body text-sm text-muted-foreground mt-1">contato@dlesmalteria.com</p>
+                <p className="font-body text-sm font-medium text-secondary-foreground tracking-wide">E-mail</p>
+                <p className="font-body text-sm text-secondary-foreground/80 mt-1">contato@dlesmalteria.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Clock className="text-rose-tea mt-1 shrink-0" size={20} strokeWidth={1.5} />
+              <Clock className="text-secondary-foreground mt-1 shrink-0" size={20} strokeWidth={1.5} />
               <div>
-                <p className="font-body text-sm font-medium text-foreground tracking-wide">Horário</p>
-                <p className="font-body text-sm text-muted-foreground mt-1">Seg–Sáb: 9h–19h</p>
+                <p className="font-body text-sm font-medium text-secondary-foreground tracking-wide">Horário</p>
+                <p className="font-body text-sm text-secondary-foreground/80 mt-1">Seg–Sáb: 9h–19h</p>
               </div>
             </div>
           </motion.div>

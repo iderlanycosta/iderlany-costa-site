@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const AvailabilitySection = () => (
-  <section id="availability" className="py-24 md:py-32 bg-secondary">
+  <section id="availability" className="py-24 md:py-32 bg-secondary text-secondary-foreground">
     <div className="container max-w-5xl text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -10,13 +10,13 @@ const AvailabilitySection = () => (
         transition={{ duration: 0.7 }}
         className="mb-16"
       >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-3">
+        <p className="font-body text-xs tracking-[0.3em] uppercase text-secondary-foreground/80 mb-3">
           Próximos Horários
         </p>
-        <h2 className="font-display text-3xl md:text-4xl tracking-wide text-foreground mb-4">
+        <h2 className="font-display text-3xl md:text-4xl tracking-wide text-secondary-foreground font-semibold mb-4">
           Agenda Disponível
         </h2>
-        <p className="font-body text-sm text-muted-foreground max-w-md mx-auto">
+        <p className="font-body text-sm text-secondary-foreground/80 max-w-md mx-auto">
           Confira os dias e horários disponíveis antes de agendar seu atendimento
         </p>
       </motion.div>
@@ -44,7 +44,7 @@ const AvailabilitySection = () => (
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mt-12 space-y-8"
       >
-        <p className="font-body text-sm text-muted-foreground italic">
+        <p className="font-body text-sm text-secondary-foreground/80 italic">
           "Os horários são atualizados em tempo real. Para agendar, entre em contato pelo WhatsApp."
         </p>
 
@@ -52,7 +52,7 @@ const AvailabilitySection = () => (
           href="https://wa.me/5598984097983"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-10 py-4 bg-rose-tea text-primary text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-rose-blush transition-all duration-300 shadow-md hover:shadow-lg"
+          className="inline-block px-10 py-4 bg-[#25D366] text-primary-foreground text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-primary/80 transition-all duration-300 shadow-md hover:shadow-lg"
         >
           Agendar pelo WhatsApp
         </a>

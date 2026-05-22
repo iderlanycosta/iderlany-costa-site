@@ -3,7 +3,7 @@ import { Instagram, Facebook } from "lucide-react";
 const Footer = () => (
   <footer className="bg-background text-foreground border-t border-border py-16">
     <div className="container text-center">
-      <p className="font-display text-2xl tracking-widest mb-6">Esmalteria Iderlany Costa</p>
+      <p className="font-display text-2xl tracking-widest mb-6">Iderlany Costa | NAILS DESIGNER</p>
 
       <div className="flex justify-center gap-6 mb-8">
         <a href="https://www.instagram.com/iderlany_costta?igsh=MXYybjgyYXBxZjhiaQ==" className="text-muted-foreground hover:text-rose-tea transition-colors" aria-label="Instagram">

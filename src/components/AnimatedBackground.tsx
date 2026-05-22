@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 // Get all images from the folder, and sort them to ensure correct video sequence order
-const images = import.meta.glob('../imagens/*.jpg', { eager: true, as: 'url' });
+const images = import.meta.glob('../imagens/*.jpeg', { eager: true, query: '?url', import: 'default' });
 const imageArray = Object.values(images).sort((a, b) => {
-    // Extract number from filename (e.g. "vídeo background deka_000.jpg" -> 0)
-    const aNum = parseInt(a.match(/(\d+)\.jpg$/)?.[1] || '0', 10);
-    const bNum = parseInt(b.match(/(\d+)\.jpg$/)?.[1] || '0', 10);
+    // Extract number from filename (e.g. "vídeo background deka_000.jpeg" -> 0)
+    const aNum = parseInt(a.match(/(\d+)\.jpeg$/)?.[1] || '0', 10);
+    const bNum = parseInt(b.match(/(\d+)\.jpeg$/)?.[1] || '0', 10);
     return aNum - bNum;
 });
 

@@ -17,17 +17,17 @@ const HeroSection = () => {
         transition={{ duration: 0.9, delay: 0.3 }}
         className="relative z-10 text-center px-6 max-w-3xl"
       >
-        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wide text-background">
+        <h1 className="font-display text-2xl md:text-5xl lg:text-6xl leading-tight tracking-wide text-background">
           ELEVE SEU ESTILO COM NOSSA{" "}
-          <span className="italic text-rose-blush">ARTE DE UNHAS</span>{" "}
+          <span className="italic text-secondary">ARTE DE UNHAS</span>{" "}
           EXCLUSIVA
         </h1>
         <p className="mt-6 font-body text-background/80 text-sm md:text-base tracking-wide max-w-md mx-auto">
-          Beleza e cuidado no conforto da sua casa. Agende seu atendimento domiciliar e aproveite uma experiência personalizada.
+          Unhas impecáveis sem precisar sair de casa. Atendimento domiciliar com conforto, higiene e dedicação em cada detalhe.
         </p>
         <a
           href="#services"
-          className="inline-block mt-8 px-8 py-3.5 bg-rose-tea text-foreground text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-rose-blush transition-colors"
+          className="inline-block mt-8 px-8 py-3.5 bg-secondary text-foreground text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-rose-blush transition-colors"
         >
           Explore Nossos Serviços
         </a>

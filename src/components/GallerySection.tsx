@@ -16,7 +16,7 @@ const images = [
 ];
 
 const GallerySection = () => (
-  <section id="gallery" className="py-24 md:py-32 bg-secondary">
+  <section id="gallery" className="py-24 md:py-32 bg-secondary text-secondary-foreground">
     <div className="container">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -25,8 +25,8 @@ const GallerySection = () => (
         transition={{ duration: 0.7 }}
         className="text-center mb-16"
       >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-rose-tea mb-3">Inspiração</p>
-        <h2 className="font-display text-3xl md:text-4xl tracking-wide text-foreground">Galeria</h2>
+        <p className="font-body text-xs tracking-[0.3em] uppercase text-secondary-foreground/80 mb-3">Inspiração</p>
+        <h2 className="font-display text-3xl md:text-4xl tracking-wide text-secondary-foreground font-semibold">Galeria</h2>
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-6xl mx-auto">

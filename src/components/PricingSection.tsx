@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
 const prices = [
-  { service: "Alogamento em Gel", price: "apartir de R$ 150" },
-  { service: "Banho de Gel", price: "R$ 120" },
-  { service: "Esmaltação em Gel", price: "R$ 60" },
-  { service: "Remoção de Alogamento", price: "R$ 40" },
-  { service: "Blindagem", price: "R$ 70" },
-  { service: "Spa de Pés", price: "R$ 110" },
+  { service: "Alogamento Natural", price: "R$ 150" },
+  { service: "Alogamento C/Nail Art", price: "R$ 170" },
+  { service: "Banho de Gel Natural", price: "R$ 110" },
+  { service: "Banho de Gel C/Nail Art", price: "R$ 140" },
+  { service: "Blindagem C/Esmaltação Gel", price: "R$ 70" },
+  { service: "Blindagem Natural", price: "R$ 110" },
   { service: "Manicure e Pedicure", price: "R$ 90" },
-  ,
+  { service: "Spa dos Pés", price: "R$ 120" },
 ];
 
 const PricingSection = () => (
@@ -35,11 +35,11 @@ const PricingSection = () => (
         {prices.map((item, i) => (
           <div
             key={item.service}
-            className={`flex items-center justify-between px-6 md:px-10 py-5 font-body text-sm ${i % 2 === 0 ? "bg-background" : "bg-secondary"
+            className={`flex items-center justify-between px-6 md:px-10 py-5 font-body text-sm ${i % 2 === 0 ? "bg-background text-foreground" : "bg-secondary text-secondary-foreground"
               } ${i < prices.length - 1 ? "border-b border-border" : ""}`}
           >
-            <span className="tracking-wider text-foreground">{item.service}</span>
-            <span className="tracking-wider text-rose-tea font-medium">{item.price}</span>
+            <span className="tracking-wider">{item.service}</span>
+            <span className={`tracking-wider font-medium ${i % 2 === 0 ? "text-rose-tea" : "text-secondary-foreground"}`}>{item.price}</span>
           </div>
         ))}
       </motion.div>
