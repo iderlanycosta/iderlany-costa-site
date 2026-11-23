@@ -1,53 +1,42 @@
-import { motion } from "framer-motion";
 import nailsPurple from "@/GALERIA/nails-purple.avif";
 import nailsPurple2 from "@/GALERIA/nails-purple-2.avif";
-import nailsRed from "@/GALERIA/nails-luxury-highlight.avif";
+import nailsLuxury from "@/GALERIA/nails-luxury-highlight.avif";
 import nailsRedFloral from "@/GALERIA/nails-red-floral.avif";
 import nailsWhite from "@/GALERIA/nails-white.avif";
 import nailsWhite2 from "@/GALERIA/nails-white-2.avif";
+import { INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/lib/contato";
 
 const images = [
-  { src: nailsPurple, alt: "Unhas roxas metálicas com arte floral" },
-  { src: nailsWhite, alt: "Unhas brancas elegantes com detalhes florais" },
-  { src: nailsRed, alt: "Unhas vermelhas vibrantes com nail art" },
-  { src: nailsWhite2, alt: "Unhas brancas minimalistas com flores" },
-  { src: nailsPurple2, alt: "Unhas roxas cromadas sofisticadas" },
-  { src: nailsRedFloral, alt: "Unhas vermelhas com arte de flores" },
+  { src: nailsPurple, alt: "Unhas amendoadas vermelhas" },
+  { src: nailsWhite, alt: "Unhas amendoadas brancas" },
+  { src: nailsLuxury, alt: "Unhas amendoadas em tom malva" },
+  { src: nailsWhite2, alt: "Unhas em tom nude natural" },
+  { src: nailsPurple2, alt: "Francesinha com pontas vermelhas e detalhe floral" },
+  { src: nailsRedFloral, alt: "Francesinha branca em unhas amendoadas" },
 ];
 
 const GallerySection = () => (
-  <section id="gallery" className="py-24 md:py-32 bg-secondary text-secondary-foreground">
+  <section id="trabalhos" className="bg-nude/45 py-20 md:py-28">
     <div className="container">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        className="text-center mb-16"
-      >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-secondary-foreground/80 mb-3">Inspiração</p>
-        <h2 className="font-display text-3xl md:text-4xl tracking-wide text-secondary-foreground font-semibold">Galeria</h2>
-      </motion.div>
-
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-6xl mx-auto">
-        {images.map((img, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="overflow-hidden group"
-          >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-48 md:h-64 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-            />
-          </motion.div>
-        ))}
+      <div className="mb-10 flex flex-wrap items-end justify-between gap-4 md:mb-14">
+        <h2 className="text-4xl md:text-5xl">Trabalhos recentes</h2>
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium underline decoration-caramelo decoration-2 underline-offset-[6px] hover:text-esmalte"
+        >
+          Mais no Instagram {INSTAGRAM_HANDLE}
+        </a>
       </div>
+
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
+        {images.map((img) => (
+          <li key={img.src} className="overflow-hidden rounded-lg bg-nude">
+            <img src={img.src} alt={img.alt} className="aspect-[4/5] w-full object-cover" loading="lazy" />
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 );

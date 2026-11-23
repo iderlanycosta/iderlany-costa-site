@@ -1,14 +1,15 @@
 import { MessageCircle } from "lucide-react";
+import { WHATSAPP_URL } from "@/lib/contato";
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/5598984097983"
+    href={WHATSAPP_URL}
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Fale conosco no WhatsApp"
-    className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+    aria-label="Conversar no WhatsApp"
+    className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg transition-transform hover:scale-105 md:bottom-6 md:right-6"
   >
-    <MessageCircle className="text-background" size={28} strokeWidth={1.8} />
+    <MessageCircle className="text-white" size={28} strokeWidth={1.8} aria-hidden="true" />
   </a>
 );
 

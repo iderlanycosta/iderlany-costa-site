@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Figtree:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,46 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    /* Paleta tirada da foto: fundo porcelana, blazer nude, batom/esmalte bordô, mechas caramelo */
+    --porcelana: 17 28% 95%;
+    --nude: 15 43% 86%;
+    --esmalte: 207 80% 48%;
+    --esmalte-escuro: 209 82% 43%;
+    --caramelo: 25 36% 49%;
+    --tinta: 335 25% 14%;
+
+    --background: var(--porcelana);
+    --foreground: var(--tinta);
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: var(--tinta);
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: var(--tinta);
 
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 100%;
+    --primary: var(--esmalte);
+    --primary-foreground: var(--porcelana);
 
-    --secondary: 216 81% 47%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: var(--nude);
+    --secondary-foreground: var(--tinta);
 
-    --muted: 340 30% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 15 35% 91%;
+    --muted-foreground: 330 12% 36%;
 
-    --accent: 300 24% 80%;
-    --accent-foreground: 0 0% 0%;
+    --accent: var(--nude);
+    --accent-foreground: var(--tinta);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 340 20% 90%;
-    --input: 340 20% 90%;
-    --ring: 300 24% 80%;
+    --border: 15 28% 84%;
+    --input: 15 28% 84%;
+    --ring: var(--esmalte);
 
-    --radius: 0.25rem;
+    --radius: 0.75rem;
 
-    --rose-mist: 340 100% 97%;
-    --rose-blush: 345 60% 93%;
-    --rose-tea: 300 24% 80%;
-    --noir: 0 0% 0%;
-    --blanc: 0 0% 100%;
-
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Raleway', sans-serif;
+    --font-display: 'Bodoni Moda', 'Didot', serif;
+    --font-body: 'Figtree', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -61,8 +63,20 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.6;
   }
 
   h1,
@@ -72,6 +86,17 @@
   h5,
   h6 {
     font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--esmalte));
+    outline-offset: 3px;
   }
 }
 
@@ -82,5 +107,10 @@
 
   .font-body {
     font-family: var(--font-body);
+  }
+
+  /* Silhueta de unha amendoada, usada só no retrato do topo */
+  .nail-shape {
+    clip-path: url(#nail-clip);
   }
 }

@@ -1,45 +1,22 @@
-import { motion } from "framer-motion";
-import highlightImg from "@/GALERIA/nails-red.avif";
+import nailsRed from "@/GALERIA/nails-red.avif";
 
 const HighlightSection = () => (
-  <section className="relative bg-background text-foreground py-24 md:py-32 overflow-hidden">
-    <div className="container grid md:grid-cols-2 gap-12 items-center">
-      <motion.div
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <p className="font-body text-base tracking-[0.3em] uppercase text-rose-tea mb-4">Exclusivo</p>
-        <h2 className="font-display text-3xl md:text-5xl tracking-wide leading-tight mb-6">
-          DESCUBRA NOSSOS{" "}
-          <span className="italic">DESIGNS</span>
-
-        </h2>
-        <p className="font-body text-base text-muted-foreground leading-relaxed max-w-md">
-          Cada design é uma expressão de elegância e sofisticação.
-        </p>
-        <a
-          href="https://wa.me/5598984097983"
-          className="inline-block mt-8 px-8 py-3.5 bg-secondary text-primary text-xs tracking-[0.2em] uppercase font-body font-medium hover:bg-rose-blush transition-colors"
-        >
-          Agendar Agora
-        </a>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <img
-          src={highlightImg}
-          alt="Mão com unhas elaboradas segurando frasco de perfume luxuoso"
-          className="w-full h-[50vh] md:h-[60vh] object-cover"
-          loading="lazy"
-        />
-      </motion.div>
+  <section id="atendimento" className="bg-esmalte py-20 md:py-28">
+    <div className="container grid items-center gap-8 md:grid-cols-2 md:gap-12">
+      <img
+        src={nailsRed}
+        alt="Unhas amendoadas douradas com glitter"
+        className="aspect-[4/5] w-full rounded-lg object-cover"
+        loading="lazy"
+      />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.021135390485!2d-44.22345282426907!3d-2.4999216381585168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69372ee74809f%3A0xbe9e2dfbf4009d22!2sJacqueline%20Primo%20Lash%20Designer!5e0!3m2!1spt-BR!2sbr!4v1795449077002!5m2!1spt-BR!2sbr"
+        title="Localização de Jacqueline Primo Lash Designer no Google Maps"
+        className="aspect-[4/5] w-full rounded-lg border-0"
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
     </div>
   </section>
 );

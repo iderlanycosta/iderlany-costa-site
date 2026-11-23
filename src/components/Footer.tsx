@@ -1,26 +1,52 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
+import { INSTAGRAM_HANDLE, INSTAGRAM_URL, WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/contato";
 
 const Footer = () => (
-  <footer className="bg-background text-foreground border-t border-border py-16">
-    <div className="container text-center">
-      <p className="font-display text-2xl tracking-widest mb-6">Iderlany Costa | NAILS DESIGNER</p>
-
-      <div className="flex justify-center gap-6 mb-8">
-        <a href="https://www.instagram.com/iderlany_costta?igsh=MXYybjgyYXBxZjhiaQ==" className="text-muted-foreground hover:text-rose-tea transition-colors" aria-label="Instagram">
-          <Instagram size={20} strokeWidth={1.5} />
-        </a>
-        <a href="https://www.instagram.com/iderlany_costta?igsh=MXYybjgyYXBxZjhiaQ==" className="text-muted-foreground hover:text-rose-tea transition-colors" aria-label="Facebook">
-          <Facebook size={20} strokeWidth={1.5} />
-        </a>
+  <footer className="bg-tinta pb-24 pt-14 text-porcelana md:pb-14">
+    <div className="container flex flex-col gap-10 md:flex-row md:items-end md:justify-between md:pr-28">
+      <div>
+        <p className="font-display text-3xl">Iderlany Costa</p>
+        <p className="mt-1 text-porcelana/70">Nail designer</p>
       </div>
 
-      <div className="flex justify-center gap-6 mb-8 font-body text-xs tracking-[0.15em] uppercase text-muted-foreground">
-        <a href="#" className="hover:text-foreground transition-colors">Política de Privacidade</a>
-        <a href="#" className="hover:text-foreground transition-colors">Termos de Uso</a>
-      </div>
+      <ul className="space-y-3">
+        <li>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 hover:text-nude"
+          >
+            <MessageCircle size={18} strokeWidth={1.6} aria-hidden="true" />
+            {WHATSAPP_DISPLAY}
+          </a>
+        </li>
+        <li>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 hover:text-nude"
+          >
+            <Instagram size={18} strokeWidth={1.6} aria-hidden="true" />
+            {INSTAGRAM_HANDLE}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      <p className="font-body text-xs text-muted-foreground/60 tracking-wide">
-        www.bydtecnologia.com.br. © 2026 Todos os direitos reservados.
+    <div className="container mt-12">
+      <p className="border-t border-porcelana/15 pt-6 text-sm text-porcelana/60">
+        © 2026 Iderlany Costa. Site por{" "}
+        <a
+          href="https://www.bydtecnologia.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-porcelana"
+        >
+          BYD Tecnologia
+        </a>
+        .
       </p>
     </div>
   </footer>

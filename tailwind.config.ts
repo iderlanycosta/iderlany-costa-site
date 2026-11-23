@@ -7,15 +7,15 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: { DEFAULT: "1.25rem", md: "2rem" },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1240px",
       },
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "serif"],
-        body: ["Raleway", "sans-serif"],
+        display: ["Bodoni Moda", "Didot", "serif"],
+        body: ["Figtree", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,11 +51,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "rose-mist": "hsl(var(--rose-mist))",
-        "rose-blush": "hsl(var(--rose-blush))",
-        "rose-tea": "hsl(var(--rose-tea))",
-        noir: "hsl(var(--noir))",
-        blanc: "hsl(var(--blanc))",
+        porcelana: "hsl(var(--porcelana))",
+        nude: "hsl(var(--nude))",
+        esmalte: {
+          DEFAULT: "hsl(var(--esmalte))",
+          escuro: "hsl(var(--esmalte-escuro))",
+        },
+        caramelo: "hsl(var(--caramelo))",
+        tinta: "hsl(var(--tinta))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -81,15 +84,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "fade-up": {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-up": "fade-up 0.8s ease-out forwards",
       },
     },
   },

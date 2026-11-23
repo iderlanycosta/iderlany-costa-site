@@ -1,3 +1,4 @@
+import { MotionConfig } from "framer-motion";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -9,17 +10,19 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
-  <>
+  <MotionConfig reducedMotion="user">
     <Header />
-    <HeroSection />
-    <ServicesSection />
-    <GallerySection />
-    <HighlightSection />
-    <PricingSection />
-    <AvailabilitySection />
+    <main>
+      <HeroSection />
+      <ServicesSection />
+      <GallerySection />
+      <HighlightSection />
+      <PricingSection />
+      <AvailabilitySection />
+    </main>
     <Footer />
     <WhatsAppButton />
-  </>
+  </MotionConfig>
 );
 
 export default Index;
