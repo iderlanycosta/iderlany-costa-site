@@ -26,7 +26,7 @@ const HeroSection = () => (
         className="order-2 md:order-1"
       >
         <h1 className="max-w-[13ch] text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-7xl">
-          Unhas <span className="whitespace-nowrap">bem-feitas,</span> no conforto da sua casa.
+          Unhas <span className="whitespace-nowrap">bem-feitas,</span> Para mulheres que desejam se sentir cuidadas confiantes e valorizadas.
         </h1>
         <p className="mt-6 max-w-[46ch] text-lg text-muted-foreground">
           Sou Iderlany Costa, nail designer.
